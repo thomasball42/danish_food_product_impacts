@@ -1,2 +1,8 @@
 env
-data
+data/GS1
+data/processed
+data/ingredient_composition.zip
+data/OptiusGS1MatchingImpacts.zip
+data/ingredient_comp
+data/mrio_food_outputs
+outputs
