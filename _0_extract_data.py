@@ -3,6 +3,7 @@ import os
 import zipfile
 
 def main():
+    
     if not os.path.exists(Path("data", "GS1", "OptiusGS1MatchingImpacts", "2025-12-10_optiusGS1_matched_impacts_PRELIMINARY.tsv")):
         zip_path = Path("data", "OptiusGS1MatchingImpacts.zip")
         os.makedirs(Path(zip_path.parent, "GS1"), exist_ok=True)
@@ -18,7 +19,7 @@ def main():
 
     extr_name = Path("food_commodity_impacts.csv")
     if not os.path.exists(Path("data", "DNK", extr_name)):
-        zip_path = Path("data", "DNK.zip")
+        zip_path = Path("data", "DNK_TRADE2021_SPAM2010.zip")
         os.makedirs(Path(zip_path.parent, "mrio_food_outputs"), exist_ok=True)
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall(Path(zip_path.parent, "mrio_food_outputs"))   
